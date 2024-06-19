@@ -1,7 +1,9 @@
 zsh ./asdf.sh
 zsh ./database.sh
+zsh ./docker_desktop.sh
 zsh ./git.sh
 zsh ./gpg.sh
+zsh ./mactex.sh
 zsh ./package_management.sh
 zsh ./postman.sh
 zsh ./rancher.sh
