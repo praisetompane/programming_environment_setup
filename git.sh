@@ -13,7 +13,7 @@ echo "Please enter default editor":
 read editor
 git config --global core.editor $editor
 
-eval `ssh-agent -s`
+eval $(ssh-agent -s)
 
 echo "Generaing SSH key"
 ssh-keygen -t id_ed25519_personal -C $email_address
@@ -22,4 +22,8 @@ ssh-add ~/.ssh/id_ed25519_personal
 
 echo "setting git pull to rebase default"
 git config --global pull.rebase true
+echo "done"
+
+echo "setting auto setup remote default"
+git config --global push.autoSetupRemote
 echo "done"
